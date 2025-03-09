@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       selectContent.textContent = tab.content;
 
-      const isMobile = window.innerWidth <= 1024; // Проверяем ширину viewport
+      const isMobile = window.innerWidth <= 1440; // Проверяем ширину viewport
 
       if (isMobile) {
         // Мобильная версия (линия вертикальная)
