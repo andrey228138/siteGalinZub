@@ -128,5 +128,7 @@ width: 100%;
     p{
         font-size: 15px;
     }
-    
+    .content{
+        padding: 0px 10px;
+    }
 }
