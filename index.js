@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: grid,
       title: "Dashboard",
       counter: null,
+      titleContent:'Dashboard',
       content: "Это Dashboard",
     },
     {
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: sliders,
       title: "Admin",
       counter:null,
+      titleContent:'Admin',
       content: "Это Admin",
     },
     {
@@ -76,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: truck,
       title: "Providers",
       counter: null,
+      titleContent:'Providers',
       content: "Это Providers",
     },
     {
@@ -83,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: send,
       title: "Payout",
       counter: null,
+      titleContent:'Payout',
       content: "Это Payout",
     },
     {
@@ -90,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: users,
       title: "Consumers",
       counter: null,
+      titleContent:'Consumers',
       content: "Это Consumers",
     },
     {
@@ -97,13 +102,15 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: setings,
       title: "Settings",
       counter: null,
+      titleContent:'Settings',
       content: "Это Settings",
     },
   ];
 
   const selectContent = select.appendChild(document.createElement("div"));
   selectContent.classList.add("content");
-
+const titleContentHtml =selectContent.appendChild(document.createElement('h2'))
+const contentHtml =selectContent.appendChild(document.createElement('p'))
   tabs.forEach((tab, index) => {
     const selectItem = document.createElement("li");
     selectItem.textContent = tab.title;
@@ -134,8 +141,8 @@ document.addEventListener("DOMContentLoaded", () => {
       activeItem = selectItem;
       activeSvg = svg;
 
-      selectContent.textContent = tab.content;
-
+      titleContentHtml.textContent=tab.titleContent
+contentHtml.textContent=tab.content
       const isMobile = window.innerWidth <= 1024; // Проверяем ширину viewport
 
       if (isMobile) {
