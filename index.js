@@ -177,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
       line.style.top = `${item.offsetTop}px`;
     } else {
       // Десктопная версия (линия горизонтальная)
-      line.style.top = `${item.offsetTop + item.clientHeight}px`;
 
       line.style.left = `${item.offsetLeft}px`;
       line.style.width = `${item.clientWidth}px`;
