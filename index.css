@@ -66,6 +66,8 @@ gap: 20px;
     justify-content: center;
     font-family: "Open sans";
 max-width: 1000px;
+padding: 0px 20px;
+
 }
 
 .select-options li .img.active svg path {
@@ -96,10 +98,12 @@ max-width: 1000px;
 h2{
 
     font-weight: 700;
+    user-select: text;
 }
 p{
     font-size: 17px;
     text-align: center;
+    user-select: text;
 }
 @media (max-width: 1024px) {
     .select-options {
@@ -120,7 +124,5 @@ p{
     p{
         font-size: 15px;
     }
-    .content{
-        padding: 0px 20px;
-    }
+    
 }
