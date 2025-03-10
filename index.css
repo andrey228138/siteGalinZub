@@ -93,7 +93,7 @@ h2{
     font-weight: 700;
 }
 p{
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
 }
 @media (max-width: 1024px) {
@@ -111,5 +111,9 @@ p{
       height: 0px;
       width: 3px;
       transition: 0.2s;
+    }
+    p{
+        font-size: 15px;
+        text-align: left;
     }
 }
