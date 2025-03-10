@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 1,
       icon: sliders,
       title: "Admin",
-      counter: 25,
+      counter:null,
       content: "Это Admin",
     },
     {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 3,
       icon: send,
       title: "Payout",
-      counter: 12,
+      counter: null,
       content: "Это Payout",
     },
     {
