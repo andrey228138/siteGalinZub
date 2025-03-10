@@ -71,7 +71,7 @@ padding: 0px 20px;
 
 }
 
-.select-options li .img.active svg path {
+.button.active .img svg path {
     fill: #000000;
     margin-right: 5px;
     transition: 0.3s;
