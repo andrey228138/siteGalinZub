@@ -107,6 +107,9 @@ p{
     line-height: 25px;
 }
 @media (max-width: 1024px) {
+    .container{
+        padding: 0px 10px;
+    }
     .select-options {
 width: 100%;
         box-sizing: border-box;
