@@ -23,6 +23,10 @@ body {
 }
 
 .select {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%; 
     position: relative; 
 }
@@ -61,6 +65,7 @@ align-items: center;
 gap: 20px;
     justify-content: center;
     font-family: "Open sans";
+max-width: 1000px;
 }
 
 .select-options li .img.active svg path {
@@ -94,7 +99,7 @@ h2{
 }
 p{
     font-size: 17px;
-    text-align: left;
+    text-align: center;
 }
 @media (max-width: 1024px) {
     .select-options {
@@ -114,6 +119,8 @@ p{
     }
     p{
         font-size: 15px;
-        text-align: left;
+    }
+    .content{
+        padding: 0px 20px;
     }
 }
